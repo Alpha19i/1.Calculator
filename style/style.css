@@ -34,7 +34,7 @@ html,body{
     font-weight: 100;
 }
 
-.box-calculator input[type=number]{
+.screen{
     width: 98%;
     color: rgb(139,139,139);
     border-radius:8px;
@@ -46,9 +46,11 @@ html,body{
     background: rgb(240, 240, 240);
     background: radial-gradient(circle,
      rgba(245,245,245,1) 51%, rgba(202,212,212,1) 92%);
+    pointer-events: none;
+    text-align: right;
 }
 
-.box-calculator input[type=number]:focus{
+.screen:focus{
     outline: 0;
     -webkit-box-shadow: 2px 11px 23px 5px rgba(0,0,0,0.10); 
     box-shadow: 2px 11px 23px 5px rgba(0,0,0,0.10);
